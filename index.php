@@ -1,4 +1,10 @@
-<?php include("connect.php") ?>
+<?php 
+/*
+Mihkel Rand
+09.05.2021
+*/
+include("connect.php")
+?>
 
 <!doctype html>
 <html lang="en">
