@@ -27,7 +27,16 @@ include("connect.php")
       <div class="row">
         <div class="col">
           <h2>Hello</h2>
-          <?php //include("login.php") ?>
+          <form action="" method="post">
+            <input class="w-20 btn btn-lg btn-primary" type="submit" name="callLogin" value="Login" />
+          </form>
+          <?php
+              if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['callLogin']))
+              {
+                include("login.php");
+                echo("<script>console.log('Login included!');</script>");  
+              }  
+          ?>
         </div>
       </div>
     </div>
