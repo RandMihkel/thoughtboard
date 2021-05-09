@@ -1,0 +1,24 @@
+// Defining commonly used colours and fonts
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #93b9c5;
+// Bootstrap theme colours
+$primary: #0074d9;
+$danger: #ff4136;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+/*
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+*/
