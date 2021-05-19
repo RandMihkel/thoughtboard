@@ -1,9 +1,24 @@
 @use 'base';
 
+/* Front page cover and navigation */
 .cover {
-    background-color: #e1fff0;
+    background-color: #fffefc;
     box-shadow: 0 -1px 15px 2px rgb(0 0 0 / 70%);
 }
+.navbar {
+  background-color: #fffefc;
+}
+.nav-item:hover {
+  background-color: rgba(95, 158, 160, 0.26);
+}
+.frontpage-img {
+  border: 4px solid #ffffff;
+}
+.frontpage-container-fluid {
+  background-color: cadetblue;
+}
+.color-white p { color: #ffffff; }
+.color-white h2 { color: #ffffff; }
 
 .form-signin {
     width: 90%;
@@ -18,3 +33,28 @@
     }
   }
 
+/* Front page text writer on main cover */
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: orange;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 2px;
+	height: 30px;
+	background-color: rgb(39, 38, 37);
+	animation: blink .70s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: rgb(39, 38, 37);
+	}
+}
